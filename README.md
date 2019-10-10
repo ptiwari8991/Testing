@@ -1,6 +1,1 @@
-This Is test
-trvserlkll
-njthyjnydfdfd
-55555555555
-
-Mukesh Gupta testing
+This Repository is made to test the Lightning Web components in Salesforce and adding the lwc Components in it.
