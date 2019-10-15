@@ -3,6 +3,15 @@
         <div class="slds-m-around_medium">
             <p>Hello, {greeting}!</p>
             <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
-        </div> 
+        </div>
+        <div class="slds-m-around_medium">
+            <template for:each={contacts} for:item="item" for:index="index">
+                <li key={item.Id}>
+                    <lightning-formatted-text value={item.Title}></lightning-formatted-text>&nbsp;
+                    <lightning-formatted-text value={item.Name}></lightning-formatted-text>&nbsp;
+                    Sr.{index}
+                </li>
+            </template>
+        </div>
     </lightning-card>
 </template>
